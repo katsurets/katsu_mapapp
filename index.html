@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Terrain Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- UI Panel -->
+    <div id="uiPanel">
+        <div id="fileSection">
+            <input type="file" id="fileInput" accept=".glb,.gltf">
+            <button id="addTerrainBtn">Add Terrain</button>
+        </div>
+        <div id="terrainsList">
+            <h3>Loaded Terrains</h3>
+            <div id="terrainsContainer"></div>
+        </div>
+        <div id="gridControls">
+            <h3>Grid Settings</h3>
+            <label>Grid Size: <input type="number" id="gridSize" value="10" min="1" max="100"></label>
+            <label>Cell Size: <input type="number" id="cellSize" value="10" min="1" max="100"></label>
+        </div>
+    </div>
+
+    <!-- 3D Viewer -->
+    <div id="container3D"></div>
+
+    <!-- Three.js and required addons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

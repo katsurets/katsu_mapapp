@@ -1,0 +1,84 @@
+﻿body {
+	margin: 0;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+}
+
+#container3D {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#uiPanel {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 300px;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	z-index: 100;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+#fileSection {
+	margin-bottom: 20px;
+}
+
+#fileInput {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+button {
+	width: 100%;
+	padding: 8px;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+	button:hover {
+		background: #0056b3;
+	}
+
+.terrain-item {
+	background: #f8f9fa;
+	padding: 10px;
+	margin: 5px 0;
+	border-radius: 4px;
+	border-left: 4px solid #007bff;
+}
+
+.terrain-controls {
+	display: flex;
+	gap: 5px;
+	margin-top: 5px;
+}
+
+	.terrain-controls button {
+		flex: 1;
+		padding: 4px;
+		font-size: 12px;
+	}
+
+#gridControls {
+	margin-top: 20px;
+}
+
+	#gridControls label {
+		display: block;
+		margin: 5px 0;
+	}
+
+	#gridControls input {
+		width: 60px;
+		margin-left: 5px;
+	}
